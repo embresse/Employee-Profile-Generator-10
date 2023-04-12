@@ -63,17 +63,32 @@ function createHTML(data) {
   }
 
   const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>My Team Profile</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11
-  `
-    
+      <title>Team Profile Generator</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/c502137733.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-5 mb-3 team-heading">
+                <h1 class="text-center">The Dream Team</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            ${cardArray.join('')}
+        </div>
+    </div>
+  </body>
+  </html>
+`;
+
 }
 
 module.exports = createHTML;

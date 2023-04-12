@@ -7,7 +7,8 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-const teamArray = [];
+const employeeArray = [];
+
 
 const manager = [
     {
@@ -129,6 +130,13 @@ function addEmployee(){
       }
     });
 };
+
+function writeToFile(html) {
+    const outputPath = path.join(__dirname, 'output', 'team.html');
+    fs.writeFile(outputPath, html, (err) =>
+      err ? console.error(err) : console.log('File written successfully')
+    );
+  }
 
 function init() {
     managerPrompt();
