@@ -131,11 +131,10 @@ function addEmployee(){
     });
 };
 
-function writeToFile(data) {
-    fs.writeFile(path.join(__dirname, 'dist', 'index.html'), data, (err) => {
-      if (err) throw err;
-      console.log('File created successfully!');
-    });
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+      err ? console.log(err) : console.log('Success!')
+    );
   }
   
   

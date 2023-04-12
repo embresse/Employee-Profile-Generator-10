@@ -89,6 +89,8 @@ function createHTML(data) {
   </html>
 `;
 
+return html
+
 }
 
 module.exports = createHTML;
