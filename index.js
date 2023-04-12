@@ -132,4 +132,6 @@ function addEmployee(){
 
 function init() {
     managerPrompt();
-}
+};
+
+init();
