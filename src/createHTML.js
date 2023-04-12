@@ -3,13 +3,15 @@ const data = require('../index');
 const Employee = require('../lib/Employee');
 
 function createHTML(data) {
-
+// function to generate html based on prompt answers
   const cardArray = [];
+  // empty array to add new employee cards 
 
   for (let i = 0; i < data.length; i++) {
     const employee = data[i];
     const role = employee.getRole();
     let card = '';
+    // series of if/else statements based on prompts to store new employees in based on answers
     if (role === 'manager') {
       card = `
         <div class="card employee-card">

@@ -8,9 +8,11 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
 const employeeArray = [];
+// empty array that new employees will be added to
 
 
 const manager = [
+    // manager questions
     {
         type: 'input',
         message: 'Manager name?',
@@ -34,6 +36,8 @@ const manager = [
 ];
 
 function managerPrompt() {
+    // initiates prompt for manager questions
+    // adds new manager to employee array
     inquirer
         .prompt(manager)
         .then((answers) => {
@@ -44,6 +48,7 @@ function managerPrompt() {
 };
 
 const engineer  = [
+    // engineer questions
     {
         type: 'input',
         message: 'Engineer name?',
@@ -67,6 +72,8 @@ const engineer  = [
 ];
 
 function engineerPrompt() {
+    // prompts engineer questions
+    // adds new engineer to employee array
     inquirer
         .prompt(engineer)
         .then((answers) => {
@@ -77,6 +84,7 @@ function engineerPrompt() {
 };
 
 const intern  = [
+    // intern questions
     {
         type: 'input',
         message: 'Intern name?',
@@ -100,6 +108,8 @@ const intern  = [
 ];
 
 function internPrompt() {
+    // function will prompt intern questions 
+    // adds new intern to employee array
     inquirer
         .prompt(intern)
         .then((answers) => {
@@ -110,6 +120,7 @@ function internPrompt() {
 };
 
 function addEmployee(){
+    // called within each prompt function
     inquirer
     .prompt({
       type: 'list',
@@ -136,12 +147,13 @@ function writeToFile(fileName, data) {
       err ? console.log(err) : console.log('Success!')
     );
   }
-
+// fs.writeFile to generate html based on prompts
   
   
 
 function init() {
     managerPrompt();
 };
+// init function to initialize app
 
 init();
