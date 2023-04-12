@@ -1,0 +1,61 @@
+body {
+    background-color: plum; 
+}
+
+
+/* Center the heading */
+.team-heading {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* Set a margin for the cards */
+.employee-card {
+    margin: 20px;
+    background-color:grey; 
+    border: 1px solid #dee2e6; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle box-shadow */
+}
+
+/* Style the card header */
+.employee-card .card-header {
+    background-color: olive; 
+    border-bottom: 1px solid #dee2e6; /* light gray border */
+    padding: 10px;
+}
+
+/* Style the card title */
+.employee-card .card-title {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+/* Style the card body */
+.employee-card .card-body {
+    padding: 20px;
+}
+
+/* Style the list group */
+.employee-card .list-group {
+    margin-bottom: 0;
+}
+
+/* Style the list group items */
+.employee-card .list-group-item {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Style the email link */
+.employee-card .list-group-item a {
+    color: goldenrod; 
+}
+
+/* Style the icon */
+.employee-card .card-title i {
+    color: black; /* blue color */
+    font-size: 24px;
+    margin-right: 10px;
+}
