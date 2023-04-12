@@ -89,7 +89,7 @@ function createHTML(data) {
   </html>
 `;
 
-return html
+return html;
 
 }
 
