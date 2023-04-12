@@ -10,7 +10,7 @@ function createHTML(data) {
     const employee = data[i];
     const role = employee.getRole();
     let card = '';
-    if (role === 'Manager') {
+    if (role === 'manager') {
       card = `
         <div class="card employee-card">
           <div class="card-header">
@@ -26,7 +26,7 @@ function createHTML(data) {
           </div>
         </div>
       `;
-    } else if (role === 'Engineer') {
+    } else if (role === 'engineer') {
       card = `
         <div class="card employee-card">
           <div class="card-header">
@@ -42,7 +42,7 @@ function createHTML(data) {
           </div>
         </div>
       `;
-    } else if (role === 'Intern') {
+    } else if (role === 'intern') {
       card = `
         <div class="card employee-card">
           <div class="card-header">

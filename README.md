@@ -22,7 +22,7 @@ npm i, npm run test, npm start
 ```
 ## Screenshot
 
-![screenshot.](./assets/Screen%20Shot%202023-04-12%20at%203.35.49%20PM.png)
+![screenshot.](./assets/images/Screen%20Shot%202023-04-12%20at%203.35.49%20PM.png)
 
 ## Link to Walk Through Video
 
