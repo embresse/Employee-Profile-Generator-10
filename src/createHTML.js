@@ -13,6 +13,7 @@ function createHTML(data) {
     let card = '';
     // series of if/else statements based on prompts to store new employees in based on answers
     if (role === 'manager') {
+      // manager card
       card = `
         <div class="card employee-card">
           <div class="card-header">
@@ -29,6 +30,7 @@ function createHTML(data) {
         </div>
       `;
     } else if (role === 'engineer') {
+      // engineer card
       card = `
         <div class="card employee-card">
           <div class="card-header">
@@ -45,6 +47,7 @@ function createHTML(data) {
         </div>
       `;
     } else if (role === 'intern') {
+      // intern card
       card = `
         <div class="card employee-card">
           <div class="card-header">
@@ -64,6 +67,7 @@ function createHTML(data) {
     cardArray.push(card);
   }
 
+  // html content
   const html = `
   <!DOCTYPE html>
   <html lang="en">
@@ -92,6 +96,7 @@ function createHTML(data) {
 `;
 
 return html;
+// returns html
 
 }
 
