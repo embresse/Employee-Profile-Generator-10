@@ -131,12 +131,14 @@ function addEmployee(){
     });
 };
 
-function writeToFile(html) {
-    const outputPath = path.join(__dirname, 'output', 'team.html');
-    fs.writeFile(outputPath, html, (err) =>
-      err ? console.error(err) : console.log('File written successfully')
-    );
+function writeToFile(data) {
+    fs.writeFile(path.join(__dirname, 'dist', 'index.html'), data, (err) => {
+      if (err) throw err;
+      console.log('File created successfully!');
+    });
   }
+  
+  
 
 function init() {
     managerPrompt();
